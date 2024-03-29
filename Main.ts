@@ -1,4 +1,3 @@
-const usbScreen = new USBScreen();
 const hdmiScreen = new HDMIScreen();
 const dviScreen = new DVIScreen();
 const usbToHDMIAdapter = new USBToHDMIAdapter(hdmiScreen);

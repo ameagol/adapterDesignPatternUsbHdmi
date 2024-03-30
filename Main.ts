@@ -1,11 +1,8 @@
-const hdmiScreen = new HDMIScreen();
-const dviScreen = new DVIScreen();
-const usbToHDMIAdapter = new USBToHDMIAdapter(hdmiScreen);
-const usbToDVIAdapter = new USBToDVIAdapter(dviScreen);
+const hdmiScreen = new HDMIScreen('Using HDMI Connectivity');
+const dviScreen = new DVIScreen('Using DVI Connectivity');
 
-// Displaying content using USB, HDMI, and DVI screens
-const componentWithUSBToHDMI = new ContentComponent(usbToHDMIAdapter);
-componentWithUSBToHDMI.displayContent("Hello, HDMI (via USB to HDMI adapter)!");
+const adapter = new AdapterUSB();
 
-const componentWithUSBToDVI = new ContentComponent(usbToDVIAdapter);
-componentWithUSBToDVI.displayContent("Hello, DVI (via USB to DVI adapter)!");
+// Displaying content
+adapter.display(hdmiScreen);
+adapter.display(dviScreen);

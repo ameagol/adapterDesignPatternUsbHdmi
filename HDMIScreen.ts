@@ -1,5 +1,7 @@
 class HDMIScreen implements Screen {
-  display(content: string): void {
-    console.log(content);
+  constructor(private connection: string) {}
+
+  display(): void {
+    console.log(`${this.connection}`);
   }
 }

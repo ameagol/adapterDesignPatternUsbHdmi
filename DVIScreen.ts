@@ -1,7 +1,8 @@
 class DVIScreen implements Screen {
-  constructor(private connection: string) {}
 
   display(): void {
-    console.log(`${this.connection}`);
+    console.log('This is using DVI Cable');
   }
+
+  // DVI Specific logic
 }

@@ -1,5 +1,5 @@
 class AdapterUSB {
-  display(screen: Screen): void {
-    screen.display(screen);
+  connect(screen: Screen): void {
+    screen.display();
   }
 }

@@ -1,8 +1,8 @@
-const hdmiScreen = new HDMIScreen('Using HDMI Connectivity');
-const dviScreen = new DVIScreen('Using DVI Connectivity');
+const hdmiScreen = new HDMIScreen();
+const dviScreen = new DVIScreen();
 
-const adapter = new AdapterUSB();
+const adapterUSB = new AdapterUSB();
 
 // Displaying content
-adapter.connect(hdmiScreen);
-adapter.connect(dviScreen);
+adapterUSB.connect(hdmiScreen);
+adapterUSB.connect(dviScreen);

@@ -1,3 +1,3 @@
 interface Screen {
-  display(content: string): void;
+  display(): void;
 }
